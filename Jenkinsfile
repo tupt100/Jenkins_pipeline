@@ -6,13 +6,6 @@ pipeline {
                 sh 'echo "Hello task1"'
             }
         }
-        stage('pullcode') {
-            
-            steps {
-                git 'https://github.com/tupt100/RepolabGIT.git'
-                
-            }
-            
-        }
+        
     }
 }
