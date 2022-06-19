@@ -6,8 +6,8 @@ pipeline {
   withDockerRegistry(credentialsId: 'b3ecb878-3f0b-4c45-a3a6-b434c255a2fa', url: 'https://registry.hub.docker.com/') {
     // some block
 }
-                sh 'docker build -t tupt/nodejs:v1 .'
-                sh 'docker push  tupt/nodejs:v1 '
+                sh 'docker build -t tupt2024/nodejs:v1 .'
+                sh 'docker push  tupt2024/nodejs:v1 '
                 
             }
         }
