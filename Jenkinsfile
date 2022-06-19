@@ -7,7 +7,7 @@ pipeline {
     // some block
 }
                 sh 'docker build -t tupt2024/nodejs .'
-                sh 'docker push tupt2024/tupt '
+                sh 'docker push tupt2024/tupt:v1 '
                 
             }
         }
