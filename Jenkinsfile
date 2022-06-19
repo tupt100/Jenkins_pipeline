@@ -3,9 +3,12 @@ pipeline {
     stages {
         stage('task1') {
             steps {
-               echo " Hello122"
-                git 'https://github.com/tupt100/RepolabGIT.git'
-                echo " Helloddd122"
+              withDockerRegistry(credentialsId: 'b3ecb878-3f0b-4c45-a3a6-b434c255a2fa', url: 'https://index.docker.io/v1/') {
+    // some block
+}
+                sh 'docker build -t nodejs .'
+                sh 'docker push  nodejs '
+                
             }
         }
         
