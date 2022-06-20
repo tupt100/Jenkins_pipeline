@@ -27,7 +27,7 @@ pipeline {
         stage('Push') {
 
 	 steps {
-                sh 'docker push tupt2024/nodejs:v1'
+                sh 'docker push tupt2024/nodejs:v2'
 			}
 		}
         
