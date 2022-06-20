@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('task1') {
             steps {
-  withDockerRegistry(credentialsId: 'b3ecb878-3f0b-4c45-a3a6-b434c255a2fa', url: 'https://registry.hub.docker.com/') {
+  withDockerRegistry(credentialsId: 'a57694e6-0db0-4834-8478-56e3a1c3e5a3', url: 'https://registry.hub.docker.com/') {
     // some block
 }
                 sh 'docker build -t nodejs .'
