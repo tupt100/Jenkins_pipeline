@@ -13,7 +13,7 @@ pipeline {
         stage('build') {
             steps {
 
-                sh 'docker build -t tupt2024/nodejs:v1 .'
+                sh 'docker build -t tupt2024/nodejs:v2 .'
           
             }
         }
