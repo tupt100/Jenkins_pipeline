@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-/
+
                 sh 'docker build -t tupt2024/nodejs:v1 .'
           
             }
